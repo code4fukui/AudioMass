@@ -1,5 +1,5 @@
 import { PKUI } from "./ui.js";
-import { PKUI_FX } from "/ui-fx.js";
+import { PKUI_FX } from "./ui-fx.js";
 import { addFXPGEQ } from "./fx-pg-eq.js";
 import { addFXAuto } from "./fx-auto.js";
 import { PKEng } from "./engine.js";
