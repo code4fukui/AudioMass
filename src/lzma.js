@@ -37,8 +37,9 @@
     for his creation, see https://lz4.github.io/lz4/
 
 */
+import { LZ4BlockWASM } from "./lz4-block-codec-wasm.js";
 
-'use strict';
+globalThis.LZ4BlockWASM = LZ4BlockWASM;
 
 /******************************************************************************/
 
@@ -47,6 +48,7 @@
 /******************************************************************************/
 
 let wd = (function() {
+    if (!document.currentScript) return "./";
     let url = document.currentScript.src;
     let match = /[^\/]+$/.exec(url);
     return match !== null ?
@@ -166,4 +168,7 @@ context.lz4BlockCodec = {
 
 /******************************************************************************/
 
-})(this || self);                       // <<<< End of private namespace
+//})(this || self);                       // <<<< End of private namespace
+})(globalThis);
+
+export const lz4BlockCodec = globalThis.lz4BlockCodec;

@@ -1,5 +1,10 @@
-(function ( w, d, PKAE ) {
-	'use strict';
+import { PKAudioFXModal } from "./modal.js";
+
+const d = document;
+
+//(function ( w, d, PKAE ) {
+export const addFXPGEQ = (PKAudioEditor) => {
+	if (!PKAudioEditor._deps) PKAudioEditor._deps = {};
 
 	var modal_name = 'modalfx';
 	var modal_esc_key = modal_name + 'esc';
@@ -3063,5 +3068,4 @@
 	};
 
 	PKAudioEditor._deps.FxREC = RecModal;
-
-})( window, document, PKAudioEditor );
+};

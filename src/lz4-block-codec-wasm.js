@@ -40,8 +40,6 @@
 
 /* global WebAssembly */
 
-'use strict';
-
 /******************************************************************************/
 
 (function(context) {                    // >>>> Start of private namespace
@@ -49,6 +47,7 @@
 /******************************************************************************/
 
 let wd = (function() {
+    if (!document.currentScript) return "./";
     let url = document.currentScript.src;
     let match = /[^\/]+$/.exec(url);
     return match !== null ?
@@ -189,6 +188,8 @@ context.LZ4BlockWASM.prototype = {
 
 /******************************************************************************/
 
-})(this || self);                       // <<<< End of private namespace
+//})(this || self);                       // <<<< End of private namespace
+})(globalThis);                       // <<<< End of private namespace
 
+export const LZ4BlockWASM = globalThis.LZ4BlockWASM;
 /******************************************************************************/

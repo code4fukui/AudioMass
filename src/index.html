@@ -33,12 +33,11 @@
 </head>
 <body>
 	<div id="app"></div>
-
+	<!--
 	<script src="dist/wavesurfer.js"></script>
 	<script src="dist/plugin/wavesurfer.regions.js"></script>
 	<script src="oneup.js"></script>
 
-	<script src="app.js"></script>
 	<script src="keys.js"></script>
 	<script src="contextmenu.js"></script>
 	<script src="ui-fx.js"></script>
@@ -56,14 +55,19 @@
 	<script src="local.js"></script>
 	<script src="id3.js"></script>
 	<script src="lzma.js"></script>
+	-->
 
 
 <!--
 	<script src="multitrack.js"></script>
 	<script src="multitrack-ui.js"></script>
 -->
-	<script>
+	<script type="module">
+		import { PKAudioEditor } from "./app.js";
+		import "./welcome.js";
+		
 		var editor = PKAudioEditor.init ('app');
+		window.PKAudioEditor = PKAudioEditor;
 
 		if ('serviceWorker' in navigator) {
 			try {

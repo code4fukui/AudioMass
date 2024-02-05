@@ -1,5 +1,7 @@
-(function ( w, d, PKAE ) {
-	'use strict';
+const d = document;
+
+export const addFXAuto = (app) => {
+	const PKAudioEditor = app;
 
 	var _pid = 0;
 	var _aid = 0;
@@ -453,5 +455,4 @@
 	};
 
 	PKAudioEditor._deps.FxAUT = FXAutomation;
-
-})( window, document, PKAudioEditor );
+};

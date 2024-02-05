@@ -1,3 +1,6 @@
+let PKAudioEditor = null;
+export const WaveSurfer_regions_setApp = (app) => PKAudioEditor = app;
+
 /*!
  * wavesurfer.js 2.0.5 (Thu Jun 28 2018 18:37:22 GMT-0700 (Pacific Daylight Time))
  * https://github.com/katspaugh/wavesurfer.js

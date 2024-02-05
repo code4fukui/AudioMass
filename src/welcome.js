@@ -1,7 +1,9 @@
-(function ( w, d, PKAE ) {
-'use strict';
+import { PKSimpleModal } from "./modal.js";
+
+const w = window;
 
 setTimeout(function () {
+	const PKAE = PKAudioEditor;
 
 	PKAudioEditor._deps.Wlc = function () {
 			var body_str = '';
@@ -67,5 +69,3 @@ setTimeout(function () {
 	PKAudioEditor._deps.Wlc ();
 
 }, 320);
-
-})( window, document, PKAudioEditor );

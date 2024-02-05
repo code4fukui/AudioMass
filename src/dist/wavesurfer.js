@@ -4,6 +4,8 @@
  * @license BSD-3-Clause
  */
 
+let PKAudioEditor = null;
+export const WaveSurfer_setApp = (app) => PKAudioEditor = app;
 
 /**
  * Calculate FFT - Based on https://github.com/corbanbrook/dsp.js
@@ -6964,9 +6966,11 @@ var WebAudio = function (_util$Observer) {
 
 WebAudio.scriptBufferSize = 256;
 exports.default = WebAudio;
-module.exports = exports['default'];
+//module.exports = exports['default'];
 
 /***/ })
 
 /******/ });
 });
+
+export const WaveSurfer = window.WaveSurfer;
