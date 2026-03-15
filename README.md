@@ -1,4 +1,7 @@
 # AudioMass
+
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 Free full-featured web-based audio & waveform editing tool
 
 ## Live
