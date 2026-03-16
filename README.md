@@ -2,7 +2,7 @@
 
 > 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-Free full-featured web-based audio & waveform editing tool
+Free full-featured web-based audio & waveform editing tool.
 
 ## Live
 [https://audiomass.co](https://audiomass.co)
@@ -14,4 +14,4 @@ Free full-featured web-based audio & waveform editing tool
 4. Navigate to [http://localhost:5055/](http://localhost:5055/) and have fun!
 
 ## License
-This project is available under the MIT license.
+MIT License — see [LICENSE](LICENSE).
